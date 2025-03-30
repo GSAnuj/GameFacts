@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    background-color: rgb(30, 28, 28);
+    min-height: 90vh;
+    max-width: 83%;
+    left: 8.5%;
+    position: relative;
+
+}
+
+#nav {
+    display: flex;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+    background-color: rgb(68, 76, 232);
+    padding: 0.2vh 1vw;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+    max-height: 75px;
+
+}
+
+#backimg {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./imgs/background.jpg");
+    background-size: contain;
+    background-position: top;
+}
+
+#logo {
+    height: 90px;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 50px;
+    position: relative;
+
+}
+
+#searchbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 25%;
+    height: 30px;
+    background-color: rgb(247, 250, 253);
+    border-radius: 20px;
+    margin-right: 30px;
+
+}
+
+#bar {
+    display: flex;
+    position: relative;
+    border: none;
+    justify-content: center;
+    color: rgb(46, 46, 46);
+    font-size: medium;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#navbutton {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+#navbutton h2 {
+    padding: 30px 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    font-weight: 500;
+    font-size: 21px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+#navbutton h2::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0%;
+    transition: all ease 0.4s;
+}
+
+#navbutton h2:hover::after {
+    bottom: 0;
+    background-color: black;
+
+}
+
+#navbutton h2 a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 9;
+}
+
+
+#stlist {
+    height: auto; /* Flexible height */
+    min-height: 70vh;
+    width: 100%;
+    background-color: rgb(32, 29, 29);
+    position: relative;
+    overflow: visible; /* Allow slides to extend */
+    margin-bottom: 40px; /* Space before next section */
+  }
+
+.label {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(41, 40, 40, 0.493);
+}
+
+.label h1 {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1.6vw;
+}
+
+#games {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 3% 20px;
+    width: 100%;
+    gap: 10px;
+}
+
+.swiper {
+
+    position: relative;
+    min-width: 200px;
+    flex: 1;
+    height: 423px;
+    padding: 2px 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+#CyberPunk {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/cyber.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#uncharted {
+
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/uncharted.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+#alan {
+
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/alan\ wake.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#tomr {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/tomb-raider-lara-croft-2013-wallpaper-thumb.webp");
+    background-size: cover;
+    background-position: center;
+}
+#gta5 {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/gta5.webp");
+    background-size: cover;
+    background-position: center;
+}
+#eldin {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/eldin\ ring.webp");
+    background-size: cover;
+    background-position: center;
+}
+#wokong {
+    max-width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-decoration: none;
+    background-image: url("./imgs/wokong.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#gamelis2nd {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(34, 36, 35);
+}
+
+#video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    clear: both; /* Reset float */
+    margin-top: 0; /* Ensure no overlap */
+  }
+  
+  #vid {
+    position: absolute;         
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);    
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+@font-face {
+    font-family: "VeniteAdoremus";
+    src: url("./FONTS/VeniteAdoremus-rgRBA.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font */
+#video h1 {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    width: 80%;
+    font-family: "VeniteAdoremus", sans-serif;
+    line-height: 60px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.749)
+}
+
+#page2 {
+    min-height: 100vh;
+    max-width: 83%;
+    background-color: rgb(38, 39, 38);
+    left: 8.5%;
+    position: relative;
+
+}
+
+#movingtxt h1 {
+    font-size: 2vw;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+}
+
+#movingtxt {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#movingtxt::-webkit-scrollbar {
+    display: none;
+}
+
+#gola {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(68, 76, 232);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 0.6vh;
+    margin: 0vw 1vw;
+}
+
+.con {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: movetxt;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes movetxt {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-100%)
+    }
+
+}
+
+#page2-bottom {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(32, 29, 29);
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+#page2-bottom h1 {
+    font-size: 1.8vw;
+    color: whitesmoke;
+}
+
+#bottom-part2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Reduces the gap between elements */
+    margin-top: 50px;
+    font-size: 1vw;
+    min-height: 100vh;
+    background-color: rgb(32, 29, 29);
+    min-width: 100%;
+}
+
+.assassin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22%;
+}
+
+.assassin img {
+    width: 100%;
+}
+
+.assassin p {
+    margin-top: 7px;
+    width: 100%;
+    color: white;
+}
+.mySwiper {
+    width: 100%;
+    max-width: 1400px; /* Prevent overflow */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+.swiper-slide {
+    width: calc(25% - 15px); /* 4 slides with spacing */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    background: rgba(0,0,0,0.7);
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    border-radius: 4px;
+}
+
+/* Game card styles - ensure they fit */
+#CyberPunk, #uncharted, #alan, #tomr , #eldin , #gta5 , #wokong  {
+    width: 100%;
+    height: 100%;
+    min-width: 250px; /* Minimum width for each card */
+}
