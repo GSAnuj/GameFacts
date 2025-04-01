@@ -11,9 +11,9 @@ const swiper = new Swiper('.mySwiper', {
     centeredSlides: false, // Disable centering
     loop: true,
     autoplay: {
-        delay: 3000,
+        delay: 5000, // Increase delay to reduce potential lag
         disableOnInteraction: false
-    },
+    },    
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
